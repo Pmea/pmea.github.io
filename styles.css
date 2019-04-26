@@ -1,0 +1,170 @@
+body{
+    height: 100%;
+    background-color: #EFEFEF;
+    font-family: "Roboto", Verdana, sans-serif;
+}
+
+.nav{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    /*margin-top: 30px;*/
+    border-bottom: 1px solid grey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav h1{
+    color: #307AFF;
+    width: 50%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav h1 a{
+    color: #307AFF;
+    text-decoration: none;
+}
+
+.nav .menu{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav .menu a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+.nav .menu a:link, a:visited{
+    color: black;
+}
+
+.nav .menu a:hover, a:active{
+    color: #307AFF;
+    border: 0px solid black;
+}
+
+.core{
+    background-color: white;
+    width: 53.7%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+    font-size: 1.1em;
+    border-left: 4px solid #3071FF;
+    text-align: justify;
+}
+
+.core .first{
+    width=400px;
+}
+
+.core h1{
+    font-size: 1.3em;
+    color: #307AFF;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+td{
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+th.cv_date{
+    width: 20%;
+}
+
+.core strong{
+    font-weight: bold;
+    /*color: #307AFF;*/
+}
+
+.core a{
+    text-decoration: none;
+    color: #307AFF;
+}
+
+.core a:hover, a:active{
+    text-decoration: underline;
+}
+
+#FFR{
+    float: right;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+#SMILE{
+    float: right;
+}
+
+#LPSM{
+    float: right;
+    padding-top: 3%;
+    padding-right: 1%;
+}
+
+.article_title{
+    font-style: italic;
+}
+
+@media screen and (max-width: 1000px){
+    .nav{
+        width: 90%;
+        height: 100px;
+    }
+    
+    .nav .menu{
+        font-size: 2.5em;
+        width: 100%;
+    }
+
+    .nav .menu a{
+        color: #307AFF;
+    }
+
+    .nav h1{
+        display: none;
+    }
+
+    .core{
+        width: 80%;
+        font-size: 1.5em;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 30px;
+        text-align: left;
+    }
+
+    #FFR{
+        display: none;
+    }
+    
+    #SMILE{
+        display: none;
+    }
+
+    #LPSM{
+        display: none;
+    }
+}
