@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pierre Mahé</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <h1><a href="index.html">Pierre Mahé</a></h1>
+        <p align="center"><img src="content/photo_profil.jpg" alt="photo of Pierre Mahe" height="180"></p>
+
+        <p style="text-align:justify">
+          PhD in computer science and signal processing from University of La Rochelle, France.
+          <!--  My research interests include all audio signal processing using learning-based modèle.-->
+        </p>
+
+        <table>
+          <tr>
+            <td><a href="index.html">Home</a></td>
+          </tr>
+          <tr>
+            <td><a href="publications.html">Publications</a></td>
+          </tr>
+          <tr>
+            <td><a href="perso.html">Perso</a></td>
+          </tr>
+          <tr>
+            <td><a href="cv.html">CV</a></td>
+          </tr>
+          <tr>
+            <td><a href="contact.html">Contact</a></td>
+          </tr>
+        </tbody>
+        </table>
+     </header>
+
+      <section>
+        <h1>Conferences</h1>
+
+
+        <div class="article" id="eusipco2020">
+          <h3><a href="https://hal.archives-ouvertes.fr/hal-03042322">Ambisonic Coding with Spatial Image Correction</a></h3>
+
+          <div>
+            <img src="content/eusipco20_powermap.png" width="90%"/>
+          </div>
+
+          <p>
+            Pierre Mahé, Stéphane Ragot, Sylvain Marchand and Jérôme Daniel<br>
+            <em>EUSIPCO, 2021, January 18-22, Amsterdam, Netherlands</em> <br> <br>
+            <a href="https://hal.archives-ouvertes.fr/hal-03042322/document">Paper</a> / <a href="https://www.youtube.com/watch?v=acbDsxKez0w"> Video presentation</a> / <a href="content/eusipco20_slides.pdf"> Slides </a>
+          </p>
+
+          <p>
+            We present a new method to enhance multi-mono coding of ambisonic audio signals.
+            In multi-mono coding, each component is represented independently by a mono core codec, this may introduce strong spatial artifacts.
+            The proposed method is based on the correction of spatial images derived from the sound-field power map of original and coded ambisonic signals.
+            The correction metadata is transmitted as side information to restore the spatial image by post-processing.
+            The performance of the proposed method is compared against naive multi-mono coding (with no side information) at the same overall bitrate.
+            Experimental results are provided for the case of First-Order Ambisonic (FOA) signals and two mono core codecs: EVS and Opus.
+            The proposed method is shown to provide on average some audio quality improvement for both core codecs.
+            ANOVA results are provided as a complementary analysis.
+          </p>
+        </div>
+
+
+
+        <div  class="article" id="sasp2019">
+          <h3><a href="https://hal.archives-ouvertes.fr/hal-02275181v1"> First-Order Ambisonic Coding with PCA Matrixing and Quaternion-Based Interpolation</a></h3>
+
+          <div>
+            <img src="content/sasp19_beams.png" width="90%"/>
+          </div>
+
+          <p>
+            Pierre Mahé, Stéphane Ragot and Sylvain Marchand <br>
+            <em>EAA Spatial Audio Signal Processing Sympasium, 2019, September 6-7, Paris, France</em> <br> <br>
+            <a href="https://hal.archives-ouvertes.fr/hal-02275181v1/document">Paper</a> / <a href="content/sasp19_slides.pdf"> Slides </a>
+          </p>
+
+          <p>
+            We present a new first-order ambisonic (FOA) coding method extending existing speech/audio codecs such as EVS or Opus.
+            The proposed method is based on Principal Component Analysis (PCA) and multi-mono coding with adaptive bit allocation.
+            The PCA operating in time-domain is interpreted as adaptive beamforming.
+            To guarantee signal continuity between frames, beamforming matrices are interpolated in quaternion domain.
+            The performance of the proposed method is compared with naive multi-mono coding with fixed bit allocation.
+            Results show significant quality improvements at bit rates from 52.8 kbit/s (4 × 13.2) to 97.6 kbit/s (4 × 24.4) using the EVS codec.
+          </p>
+        </div>
+
+
+        <div  class="article" id="dafx2019">
+          <h3><a href="https://hal.archives-ouvertes.fr/hal-02289558"> First-Order Ambisonic Coding with PCA Matrixing and Quaternion-Based Interpolation</a></h3>
+
+          <div>
+            <img src="content/dafx19_overview_codec.png" width="90%"/>
+          </div>
+
+          <p>
+            Pierre Mahé, Stéphane Ragot and Sylvain Marchand <br>
+            <em>DAFx, 2019, September 2-6, Birmingham, United Kingdom</em> <br><br>
+            <a href="https://hal.archives-ouvertes.fr/hal-02289558/document">Paper</a> / <a href="content/dafx19_slides.pdf"> Slides </a>
+          </p>
+
+          <p>
+            We present a spatial audio coding method which can extend existing speech/audio codecs, such as EVS or Opus, to represent
+            first-order ambisonic (FOA) signals at low bit rates.
+            The proposed method is based on principal component analysis (PCA) to decorrelate ambisonic components prior to multi-mono coding.
+            The PCA rotation matrices are quantized in the generalized Euler angle domain;
+            they are interpolated in quaternion domain to avoid discontinuities between successive signal blocks.
+            We also describe an adaptive bit allocation algorithm for an optimized multi-mono coding of principal components.
+            A subjective evaluation using the MUSHRA methodology is presented to compare the performance of the proposed method with naive multi-mono coding using a fixed bit allocation.
+            Results show significant quality improvements at bit rates in the range of 52.8 kbit/s (4 × 13.2) to 97.6 kbit/s (4 × 24.4) using the EVS codec.
+          </p>
+        </div>
+
+      <h1 style="padding-top: 30px;">Posters and Presentations</h1>
+
+      <div  class="article">
+        <h3><a href="https://eusipco2020.org/call-for-3-minute-thesis/">My 3 Minutes Thesis presentation</a></h3>
+
+        <div>
+          <img src="content/3MT_video_miniature.png" width="60%"/>
+        </div>
+
+        <p>
+          Pierre Mahé<br>
+          <em>JJCAAS, 2019, June 27-28, Le Mans, France</em> <br><br>
+          <a href="https://www.youtube.com/watch?v=zcd8Wo2JLWg">Live recording</a>
+        </p>
+      </div>
+
+      <div  class="article">
+        <h3><a href="https://jjcaas2019.sciencesconf.org/">Codage Ambisonique pour les Communications Immersives</a></h3>
+
+        <div>
+          <img src="content/jjcass19_poster_miniature.png" width="60%"/>
+        </div>
+
+        <p>
+          Pierre Mahé, Stéphane Ragot and Sylvain Marchand <br>
+          <em>JJCAAS, 2019, June 27-28, Le Mans, France</em> <br><br>
+          <a href="content/jjcaas19_poster.pdf">Poster</a>
+        </p>
+      </div>
+
+      </section>
+      <footer>
+        <!--<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>-->
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
